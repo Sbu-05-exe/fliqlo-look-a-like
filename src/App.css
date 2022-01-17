@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@700&family=Be+Vietnam+Pro:wght@800&family=Roboto:wght@100;900&display=swap');
+
+
+body {
+	height:  100vh;
+	width:  100vw;
+	margin:  0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+	width:  100%;
+	height:  100%;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	font-family:  sans-serif;
+	font-size:  20rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1::before {
+	content:  "";
+	position:  absolute;
+	/*border:  1px solid red;*/
+	width:  100vw;
+	height:  1vh;
+	background-color:  white;
+	transform:  translateY(10.5rem);
 }
